@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Report</title>
+    <style>
+                .left {
+            font-size: 1.5rem;
+        }
+        
+      .left{
+            color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+h1{
+    color: white;
+}
+footer {
+            background-color: teal;
+            ;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(82, 15, 35);
+            padding: auto;
+
+        }
+
+        .footersecond a,
+        .footerthird a,
+        .footerfourth a {
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        .footersecond a:visited,
+        .footerthird a:visited,
+        .footerfourth a:visited {
+            color: rgb(244, 244, 250);
+
+        }
+
+        .footersecond a:hover,
+        .footerthird a:hover,
+        .footerfourth a:hover {
+            color: lightgray;
+
+        }
+        footer h1{
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(28, 65, 65);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a :hover {
+            color: rgb(159, 159, 235);
+            font-size: 1.04rem;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #dfeeec;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(121, 96, 96, 0.1);
+        }
+        .header, .semester {
+            margin-bottom: 20px;
+        }
+        .header table, .semester table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .header table th, .header table td, .semester table th, .semester table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .header table th {
+            background-color: #c8d4d6;
+        }
+        .semester-title {
+            background-color: #c8d4d6;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .semester-subtitle {
+            background-color: #c8d4d6;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: right;
+            font-size: 12px;
+            color: #010f0e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="index.html" style="text-decoration: none; color: white;">Khooshi's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="result.html">My Results</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="cv.html">CuruiculumVitae</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contactme</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="header">
+            <table>
+                <tr>
+                    <th>ENROLLMENT NO.</th>
+                    <th>CPI</th>
+                    <th>CGPA</th>
+                    <th>TOT BACKL</th>
+                    <th>BCK1</th>
+                    <th>BCK2</th>
+                    <th>BCK3</th>
+                    <th>BCK4</th>
+                    <th>BCK5</th>
+                    <th>BCK6</th>
+                    <th>BCK7</th>
+                    <th>BCK8</th>
+                </tr>
+                <tr>
+                    <td>220213107001</td>
+                    <td>8.29</td>
+                    <td>8.61</td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Last Exam</th>
+                    <th>Sem</th>
+                    <th>Declaration Date</th>
+                    <th>Cur Back</th>
+                    <th>SPI</th>
+                </tr>
+                <tr>
+                    <td>BE SEM 5 - Regular (DEC 2023)</td>
+                    <td>5</td>
+                    <td>06-3-2024</td>
+                    <td>0</td>
+                    <td>8.61</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="semester">
+            <div class="semester-title">SEM 3</div>
+            <div class="semester-subtitle">WINTER - 2022 (SEAT NO : 220213107001)</div>
+            <table>
+                <tr>
+                    <th>SUB CODE</th>
+                    <th>SUBJECT NAME</th>
+                    <th>E,AB</th>
+                    <th>TH ESE</th>
+                    <th>TH PA</th>
+                    <th>TH TOTAL</th>
+                    <th>PR ESE</th>
+                    <th>PR PA</th>
+                    <th>PR TOTAL</th>
+                    <th>SUBJECT GRADE</th>
+                </tr>
+                <tr>
+                    <td>3130004</td>
+                    <td>Effective Technical Communication</td>
+                    <td>-</td>
+                    <td>AB</td>
+                    <td>AB</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AB</td>
+                </tr>
+                <tr>
+                    <td>3130006</td>
+                    <td>Probability and Statistics</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>BB</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                </tr>
+                <tr>
+                    <td>3130007</td>
+                    <td>Indian Constitution</td>
+                    <td>-</td>
+                    <td>PS</td>
+                    <td>PS</td>
+                    <td>PS</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>PS</td>
+                </tr>
+                <tr>
+                    <td>3130008</td>
+                    <td>Design Engineering - I A</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                </tr>
+                <tr>
+                    <td>3130702</td>
+                    <td>Data Structures</td>
+                    <td>-</td>
+                    <td>CC</td>
+                    <td>BB</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AB</td>
+                    <td>BB</td>
+                    <td>BB</td>
+                </tr>
+                <tr>
+                    <td>3130703</td>
+                    <td>Database Management Systems</td>
+                    <td>-</td>
+                    <td>BC</td>
+                    <td>AB</td>
+                    <td>BC</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AB</td>
+                    <td>BB</td>
+                </tr>
+                <tr>
+                    <td>3130704</td>
+                    <td>Digital Fundamentals</td>
+                    <td>-</td>
+                    <td>BC</td>
+                    <td>AB</td>
+                    <td>BC</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AB</td>
+                    <td>BB</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="semester">
+            <div class="semester-title">SEM 4</div>
+            <div class="semester-subtitle">SUMMER - 2023 (SEAT NO : 220213107001)</div>
+            <table>
+                <tr>
+                    <th>SUB CODE</th>
+                    <th>SUBJECT NAME</th>
+                    <th>E,AB</th>
+                    <th>TH ESE</th>
+                    <th>TH PA</th>
+                    <th>TH TOTAL</th>
+                    <th>PR ESE</th>
+                    <th>PR PA</th>
+                    <th>PR TOTAL</th>
+                    <th>SUBJECT GRADE</th>
+                </tr>
+                <tr>
+                    <td>3140005</td>
+                    <td>Design Engineering 1 B</td>
+                    <td>-</td>
+                    <td>BC</td>
+                    <td>BB</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                </tr>
+                <tr>
+                    <td>3140702</td>
+                    <td>Operating System</td>
+                    <td>-</td>
+                    <td>BC</td>
+                    <td>BB</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>BB</td>
+                </tr>
+                <tr>
+                    <td>3140705</td>
+                    <td>Object Oriented Programming - I</td>
+                    <td>-</td>
+                    <td>BC</td>
+                    <td>BB</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>BB</td>
+                </tr>
+                <tr>
+                    <td>3140707</td>
+                    <td>Computer Organization & Architecture</td>
+                    <td>-</td>
+                    <td>BC</td>
+                    <td>BB</td>
+                    <td>AB</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>BB</td>
+                </tr>
+                <tr>
+                    <td>3140708</td>
+                    <td>Discrete Mathematics</td>
+                    <td>-</td>
+                    <td>CD</td>
+                    <td>CC</td>
+                    <td>CD</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>CD</td>
+                </tr>
+                <tr>
+                    <td>3140719</td>
+                    <td>Principles of Economics and Management</td>
+                    <td>-</td>
+                    <td>AB</td>
+                    <td>BC</td>
+                    <td>BB</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>BB</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="semester">
+            <div class="semester-title">SEM 5</div>
+            <div class="semester-subtitle">WINTER - 2023 (SEAT NO : 220213107001)</div>
+            <table>
+                <tr>
+                    <th>SUB CODE</th>
+                    <th>SUBJECT NAME</th>
+                    <th>E,AB</th>
+                    <th>TH ESE</th>
+                    <th>TH PA</th>
+                    <th>TH TOTAL</th>
+                    <th>PR ESE</th>
+                    <th>PR PA</th>
+                    <th>PR TOTAL</th>
+                    <th>SUBJECT GRADE</th>
+                </tr>
+                <tr>
+                    <td>3150001</td>
+                    <td>Design Engineering II - A</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AB</td>
+                </tr>
+                <tr>
+                    <td>3150005</td>
+                    <td>Integrated Personality Development Course</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AB</td>
+                </tr>
+                <tr>
+                    <td>3150703</td>
+                    <td>Analysis and Design of Algorithms</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AB</td>
+                </tr>
+                <tr>
+                    <td>3150709</td>
+                    <td>Professional ethics</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>BB</td>
+                </tr>
+                <tr>
+                    <td>3150710</td>
+                    <td>Computer Networks</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>BB</td>
+                </tr>
+                <tr>
+                    <td>3150711</td>
+                    <td>Software Engineering</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>BB</td>
+                </tr>
+                <tr>
+                    <td>3150713</td>
+                    <td>Python for Data Science</td>
+                    <td>-</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>AA</td>
+                    <td>CD</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <label for="label"> <a href="https://www.students.gtu.ac.in/">To verify</a></label>
+          
+        </div>
+    </div>
+    <footer>
+        <div class="footer" style="margin-top: 4rem;">
+            <div class="footerfirst">
+                <h1>Khooshi's Portfolio</h1>
+            </div>
+            <div class="footersecond">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footerthird">
+                <ul>
+                    <li><a href="https://github.com/khooshib" class="link">Github</a></li>
+                    <li><a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1322229668320305985"
+                            class="link">Figma</a></li>
+                </ul>
+            </div>
+            <div class="footerfourth">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/khooshi-b-87780b277/" class="href">Linkedin</a></li>
+                    <li><a href="https://www.hackerrank.com/profile/ksbhadiyadra52" class="href">HackerRank</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            CopyRight &#169; khooshisportfolio.com | All Rights Reserved by Khooshi Bhadiyadra
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: rgb(19, 45, 45);
+          
+        }
+        .left{
+            color: white;
+        }
+        footer {
+            background-color: teal;
+            ;
+            height: 233px;
+        }
+h1{
+    color: white;
+}
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(82, 15, 35);
+            padding: auto;
+
+        }
+
+        .footersecond a,
+        .footerthird a,
+        .footerfourth a {
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        .footersecond a:visited,
+        .footerthird a:visited,
+        .footerfourth a:visited {
+            color: rgb(244, 244, 250);
+
+        }
+
+        .footersecond a:hover,
+        .footerthird a:hover,
+        .footerfourth a:hover {
+            color: lightgray;
+
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(28, 65, 65);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a :hover {
+            color: rgb(159, 159, 235);
+            font-size: 1.04rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #a5c8c8;
+            border-radius: 8px;
+            margin-top: 3rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            font-weight: 600;
+        }
+        h2 {
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        p {
+            font-weight: 300;
+            line-height: 1.6;
+        }
+        .video {
+            margin-top: 10px;
+        }
+        .cv-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #033533;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 400;
+        }
+        .cv-link:hover {
+            background-color: #20a4a4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="index.html" style="text-decoration: none; color: white;">Khooshi's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="result.html">My Results</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="cv.html">CuruiculumVitae</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contactme</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Hey there! I'm Khooshi Bhadiyadra, and I'm delighted to welcome you to my portfolio website. Here, you can explore my skills, experiences, and projects. If you're interested in learning more about my background and expertise, feel free to download my CV by clicking the button below.</p>
+        
+        <!-- Add PDF Preview -->
+        <embed src="KhooshiBhadiyadraCV.pdf" type="application/pdf" width="100%" height="600px" style="margin-top: 3rem;"/>
+    
+        <!-- Download CV Button -->
+        <a href="KhooshiBhadiyadraCV.pdf" class="cv-link" target="_blank">Download My CV</a>
+    </div>
+    <footer>
+        <div class="footer" style="margin-top: 4rem;">
+            <div class="footerfirst">
+                <h1>Khooshi's Portfolio</h1>
+            </div>
+            <div class="footersecond">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footerthird">
+                <ul>
+                    <li><a href="https://github.com/khooshib" class="link">Github</a></li>
+                    <li><a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1322229668320305985"
+                            class="link">Figma</a></li>
+                </ul>
+            </div>
+            <div class="footerfourth">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/khooshi-b-87780b277/" class="href">Linkedin</a></li>
+                    <li><a href="https://www.hackerrank.com/profile/ksbhadiyadra52" class="href">HackerRank</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            CopyRight &#169; khooshisportfolio.com | All Rights Reserved by Khooshi Bhadiyadra
+        </div>
+    </footer>
+</body>
+</html>

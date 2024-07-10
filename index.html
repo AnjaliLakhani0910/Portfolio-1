@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        .secondsection h1 {
+    font-size: 1.9rem;
+    color: rgb(26, 77, 77);
+}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(228, 236, 235, 0.952);
+            color: teal;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(28, 65, 65);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a :hover {
+            color: rgb(159, 159, 235);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            background: rgba(112, 4, 54, 0.607);
+            ;
+            height: 1.2px;
+            border: 0;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 140px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 3rem;
+            margin: 30px;
+
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+
+            padding: 12px;
+            background: white;
+            color: teal;
+            border: 2px solid teal;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightsection img {
+
+            margin: 50px 0;
+
+        }
+
+        .purple {
+            background: linear-gradient(rgb(255, 255, 255), rgb(20, 149, 117), rgb(113, 69, 69));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .textgray {
+            color: teal;
+        }
+
+        #element {
+            background: linear-gradient(rgb(255, 255, 255), rgb(20, 149, 117), rgb(113, 69, 69));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 40vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 200px;
+        }
+
+        .image-top {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .image2-top {
+            width: 7.5rem;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .image3-top {
+            width: 5.5rem;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 5px;
+            width: 170px;
+            margin-left: 1rem;
+        }
+
+
+        .vertical-desc {
+            font-size: 9px;
+            top: 17px;
+            position: relative;
+            color: gray;
+            width: 156px;
+            text-align: justify;
+            margin-left: 1rem;
+        }
+
+        footer {
+            background-color: teal;
+            ;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: rgb(82, 15, 35);
+            padding: auto;
+
+        }
+
+        .footersecond a,
+        .footerthird a,
+        .footerfourth a {
+            color: white;
+
+            text-decoration: none;
+
+        }
+
+        .footersecond a:visited,
+        .footerthird a:visited,
+        .footerfourth a:visited {
+            color: rgb(244, 244, 250);
+
+        }
+
+        .footersecond a:hover,
+        .footerthird a:hover,
+        .footerfourth a:hover {
+            color: lightgray;
+
+        }
+
+        .secondsection {
+            text-align: center;
+            /* Center the text horizontally */
+        }
+
+        .centered-text {
+            margin-bottom: 20px;
+            /* Space between text and boxes */
+        }
+
+        .boxes-container {
+            display: flex;
+            /* Use flexbox to layout the containers */
+            justify-content: center;
+            /* Center the containers horizontally */
+        }
+
+        .vertical {
+            margin: 0 10px;
+            /* Add some space between the containers */
+            width: 45%;
+            /* Adjust the width as needed */
+        }
+
+        .vertical-title {
+            position: relative;
+    top: -4px;
+    width: 170px;
+    margin-left: 1rem;
+    font-size: 13px;
+
+            /* Space between image and title */
+        }
+
+        .vertical-desc {
+            margin-top: -7px;
+            /* Space between title and description */
+        }
+        .footer-first{
+            color: white;
+        }
+        h1{
+            color: white;
+        }
+        div.left{
+            color: white;
+        }
+
+        /* Additional styling for images and other elements */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="index.html" style="text-decoration: none; color: white;">Khooshi's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="result.html">My Results</a>
+                    </li>
+                    <li>
+                        <a href="project.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="cv.html">CuruiculumVitae</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contactme</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hii, My name is <span class="purple">Khooshi Bhadiyadra</span>
+                <div>And i am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" id="downloadResumeBtn">Download Resume</button>
+                    <button class="btn" id="visitLinkedinBtn">Visit Linkedin</button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="web.jpg " alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondsection">
+            <div class="centered-text">
+                <span class="textgray">What I have done so far</span>
+                <h1>Work Experience</h1>
+            </div>
+            <div class="boxes-container">
+
+                <div class="vertical">
+                    
+                    <div class="contain" style="border: 1px solid black;
+                    width: 12rem;
+                    height: 17rem;">
+                    <img class="image-top" src="androidpic.PNG" alt="">
+                        <div class="vertical-title">
+                            Android Domain Team Member at GDSC, Bhavnagar (July 2023 - November 2023)
+                        </div>
+                        <div class="vertical-desc">
+                            I was an Executive team member at GDSC (Google Developer Students Club), Bhavnagar in
+                            Android
+                            Domain where I got to learn about diffrent android tasks and attended several workshops
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                   
+                    <div class="contain" style="border: 1px solid black;
+                    width: 12rem;
+                    height: 17rem;">
+                     <img class="image2-top" src="codsoft.png" alt="">
+                        <div class="vertical-title">
+                            UI/UX Intern (January 2024 - February 2024)
+                        </div>
+                        <div class="vertical-desc">
+                            I worked as an UI/UX Intern at Codsoft for one month where I performed several designing
+                            tasks on designing restaurant menu, mail template, a simple login page using Figma
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+
+                    <div class="contain" style="border: 1px solid black;
+                    width: 12rem;
+                    height: 17rem;">
+                                        <img class="image3-top" src="meetanshi.png" alt="">
+                        <div class="vertical-title">
+                           Web Development Intern at Meetanshi Technologies LLP - Full Service Ecommerce Agency(June 29 2024-July 12 2024)
+                        </div>
+                        <div class="vertical-desc">
+                           I worked as an Web development Intern at Meetanshi Technologies, Bhavnagar for 15 days summer internship and performed several web development tasks
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerfirst">
+                <h1>Khooshi's Portfolio</h1>
+            </div>
+            <div class="footersecond">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footerthird">
+                <ul>
+                    <li><a href="https://github.com/khooshib" class="link">Github</a></li>
+                    <li><a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1322229668320305985"
+                            class="link">Figma</a></li>
+                </ul>
+            </div>
+            <div class="footerfourth">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/khooshi-b-87780b277/" class="href">Linkedin</a></li>
+                    <li><a href="https://www.hackerrank.com/profile/ksbhadiyadra52" class="href">HackerRank</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            CopyRight &#169; khooshisportfolio.com | All Rights Reserved by Khooshi Bhadiyadra
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'UI/UX Designer', 'Android App Developer', 'Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        document.getElementById('downloadResumeBtn').addEventListener('click', function () {
+            window.location.href = 'KhooshiBhadiyadraCV.pdf';
+        });
+
+        document.getElementById('visitLinkedinBtn').addEventListener('click', function () {
+            window.location.href = 'https://www.linkedin.com/in/khooshi-b-87780b277/';
+        });
+    </script>
+</body>
+
+</html>
