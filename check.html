@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Screenshot Protector</title>
+  <script src="javascriptfile.js" ></script>
+  <style>
+    /* Add a black overlay to the screenshot */
+    .screenshot-protected {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.5;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <!-- Your website content here -->
+  <h1>Welcome to my website!</h1>
+
+  <script>
+    // Detect when the user is using the Snipping Tool (or any other screenshot tool)
+    document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'hidden') {
+        // Add a black overlay to the screenshot
+        const overlay = document.createElement('div');
+        overlay.className = 'screenshot-protected';
+        document.body.appendChild(overlay);
+      }
+    });
+  </script>
+</body>
+</html>
